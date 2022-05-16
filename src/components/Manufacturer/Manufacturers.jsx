@@ -1,6 +1,6 @@
 import React from 'react'
 import './manufact.css'
-export const Manufacturers = () => {
+export const Manufacturers = ({name}) => {
  const square={
       listStyle:"square"
   }
@@ -10,12 +10,13 @@ export const Manufacturers = () => {
   
     return (
     <>
-      <h1>Mobile Manufactures</h1>
+      {/* <h1>Mobile Manufactures</h1> */}
       <ul>
-          <li style={square}>Samsung</li>
+        <li>{name}</li>
+          {/* <li style={square}>Samsung</li>
           <li className='square'>HTC</li>
           <li style={disc}>Micromax</li>
-          <li style={{listStyle:"circle"}}>Apple</li>
+          <li style={{listStyle:"circle"}}>Apple</li> */}
       </ul>
     </>
   )
